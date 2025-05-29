@@ -1,0 +1,910 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Cafes</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../static/css/cafes.css">
+    <link rel="stylesheet" href="../static/media/cafesmedia.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500;600&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container" style="max-width: 1400px;">
+        <div class="header-content">
+          <a href="../templates/index.html"><div class="logo">Per<span>q</span>Club</div></a>
+          <button
+            class="mobile-menu-toggle"
+            id="menuToggle"
+            onclick="toggleMenu()"
+          >
+            <div class="user-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+          </button>
+          <nav id="mainNav">
+            <div class="nav-center">
+            
+            <ul>
+              <li> <select class="location-select">
+                    <option value="">Select Location</option>
+                    <option value="new-york">Mumbai</option>
+                    <option value="los-angeles">Pune</option>
+                    <option value="chicago">Delhi</option>
+                    <option value="seattle">Bangalore</option>
+                    <option value="miami">Gujarat</option>
+                    <option value="austin">Goa</option>
+                </select></li>
+              <li><div class="search-container">
+                    <form class="search-form">
+                        <input type="text" class="search-input" placeholder="Search cafes, perks, events...">
+                        <button type="submit" class="search-button">🔍</button>
+                    </form>
+                </div></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="../templates/cafes.html">Cafés</a></li>
+              <li><a href="../templates/membership.html">Memberships</a></li>
+              <li><a href="../templates/aboutus.html">About Us</a></li>
+              <li><a href="../templates/login.html" class="cta-button-2 login" >Log In</a></li>
+              <li><a href="../templates/signup.html" class="cta-button join-now
+                ">Join Now</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <!-- Featured Cafes -->
+    <section class="featured-cafes" id="cafes">
+      <div class="container">
+        <h2 class="section-title">Our Partner Cafés</h2>
+        <div class="section-title-underline"></div>
+
+        <div class="cafe-grid">
+       
+          <div class="cafe-card" >
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-1-img-1.jpg"
+                  alt="Bombay To Barcelona Library Cafe - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-1-img-2.jpg"
+                  alt="Bombay To Barcelona Library Cafe - Coffee"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-1-img-3.webp"
+                  alt="Bombay To Barcelona Library Cafe - Books"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=1'">
+              <h3>Bombay To Barcelona Library Café.</h3>
+              <div class="cafe-location">Andheri East, Mumbai</div>
+              <div class="cafe-specialty-tag">
+               <u><b><i>Specialty:</i></b></u> Chocolate Crepes, Café Bonbon, Cold Coffee.
+              </div>
+            </div>
+          </div>
+    
+
+          <div class="cafe-card">
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-2-img-1.jpg"
+                  alt="The Coffee Nook - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-2-img-2.jpg"
+                  alt="The Coffee Nook - Cold Brew"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-2-img-3.jpg"
+                  alt="The Coffee Nook - Seating"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=2'" >
+              <h3>Kala Ghoda Café</h3>
+              <div class="cafe-location">Fort, Mumbai</div>
+              <div class="cafe-specialty-tag">
+                <u><b><i>Specialty:</i></b></u> Chocolate Shot, Almond Cake, Mint Tea.
+              </div>
+            </div>
+          </div>
+
+          <div class="cafe-card" >
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-3-img-1.jpg"
+                  alt="Café Momentum - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-3-img-2.jpg"
+                  alt="Café Momentum - Cappuccino"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-3-img-3.jpg"
+                  alt="Café Momentum - Outdoor"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=3'">
+              <h3>Poetry by Love & Cheesecake</h3>
+              <div class="cafe-location">Bandra west, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> Ny style Cheesecake, Café Latte, Tiramisu Pastry.</div>
+            </div>
+          </div>
+
+          <div class="cafe-card" >
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-4-img-1.jpg"
+                  alt="Morning Ritual - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-4-img-2.jpg"
+                  alt="Morning Ritual - Espresso"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-4-img-3.jpg"
+                  alt="Morning Ritual - Pastries"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=4'">
+              <h3>Leaping Windows Café</h3>
+              <div class="cafe-location">Andheri West, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> Vanilla Milkshake, Nutella Pancakes, Americano.</div>
+            </div>
+          </div>
+
+          <div class="cafe-card" >
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-5-img-1.jpg"
+                  alt="The Roastery - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-5-img-2.jpg"
+                  alt="The Roastery - House Blend"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-5-img-3.jpg"
+                  alt="The Roastery - Roasting"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=5'">
+              <h3>Bombay Coffee House</h3>
+              <div class="cafe-location">Bandra West, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> Iced Caramel Coffee, Irish Cream Coffee, Mochaccino.</div>
+            </div>
+          </div>
+
+          <div class="cafe-card" >
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-6-img-1.jpg"
+                  alt="Bean & Beyond - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-6-img-2.jpg"
+                  alt="Bean & Beyond - Latte Art"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/Cafe-6-img-3.jpg"
+                  alt="Bean & Beyond - Beans"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=6'">
+              <h3>Mockingbird Café</h3>
+              <div class="cafe-location">Churchgate, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> Flourless Chocolate Fudge, Flowerpot Tiramisu, Irish Latte.</div>
+            </div>
+          </div>
+
+
+          <div class="cafe-card">
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-7-img-1.jpg"
+                  alt="Bean & Beyond - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-7-img-2.jpg"
+                  alt="Bean & Beyond - Latte Art"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-7-img-3.jpg"
+                  alt="Bean & Beyond - Beans"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=7'">
+              <h3>Brooke Bond Taj Mahal Tea House</h3>
+              <div class="cafe-location">Churchgate, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> Vanilla Tea, Kashmiri Tea, Filter Coffee.</div>
+            </div>
+          </div>
+
+
+          <div class="cafe-card" >
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-8-img-1.jpg"
+                  alt="Bean & Beyond - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-8-img-2.jpg"
+                  alt="Bean & Beyond - Latte Art"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-8-img-3.jpg"
+                  alt="Bean & Beyond - Beans"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=8'">
+              <h3>Mary Lodge by Subko</h3>
+              <div class="cafe-location"> Bandra West, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> Peppermint Mocha, Honey Cappuccino, Chocolate Croissant.</div>
+            </div>
+          </div>
+
+
+          <div class="cafe-card">
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-9-img-1.jpg"
+                  alt="Bean & Beyond - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-9-img-2.jpg"
+                  alt="Bean & Beyond - Latte Art"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-9-img-3,jpg.webp"
+                  alt="Bean & Beyond - Beans"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=9'">
+              <h3>Candies</h3>
+              <div class="cafe-location">Bandra, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> Cold Coffee, Blueberry Cheesecake, Hot Chocolate.</div>
+            </div>
+          </div>
+
+
+          <div class="cafe-card" >
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-10-img-1.jpg"
+                  alt="Bean & Beyond - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-10-img-2.jpg"
+                  alt="Bean & Beyond - Latte Art"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-10-img-3.jpg"
+                  alt="Bean & Beyond - Beans"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=10'">
+              <h3>Prithvi Cafe</h3>
+              <div class="cafe-location">Juhu, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> Irish Shake, Chocolate Chip Waffle, Apple Cinnamon Muffin.</div>
+            </div>
+          </div>
+
+
+          <div class="cafe-card">
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-11-img-1.jpg"
+                  alt="Bean & Beyond - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-11-img-2.jpg"
+                  alt="Bean & Beyond - Latte Art"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-11-img-3.jpg"
+                  alt="Bean & Beyond - Beans"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=11'">
+              <h3>The Bandstand Pantry</h3>
+              <div class="cafe-location">Bandra West, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> Boo Boo Callebaut, Vietnamese Iced Coffee, Mac N Cheese.</div>
+            </div>
+          </div>
+
+
+          <div class="cafe-card">
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-12-img-1.jpg"
+                  alt="Bean & Beyond - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-12-img-2.jpg"
+                  alt="Bean & Beyond - Latte Art"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-12-img-3.jpg"
+                  alt="Bean & Beyond - Beans"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=12'">
+              <h3>Coffee by Di Bella</h3>
+              <div class="cafe-location">Versova, Andheri West, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> Chocolate Explosion Frappe, Sparkling Coffee, Snicker Shake</div>
+            </div>
+          </div>
+
+
+          <div class="cafe-card" >
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-13-img-1.jpg"
+                  alt="Bean & Beyond - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-13-img-2.jpg"
+                  alt="Bean & Beyond - Latte Art"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-13-img-3.jpg"
+                  alt="Bean & Beyond - Beans"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=13'">
+              <h3>The Nutcracker</h3>
+              <div class="cafe-location">Fort, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> Buttermilk Pancakes, Belgian Hot Chocolate, Nutcracker.</div>
+            </div>
+          </div>
+
+
+          <div class="cafe-card">
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-14-img-1.jpg"
+                  alt="Bean & Beyond - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-14-img-2.jpg"
+                  alt="Bean & Beyond - Latte Art"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-14-img-3.jpg"
+                  alt="Bean & Beyond - Beans"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=14'">
+              <h3>Grandmama's Café</h3>
+              <div class="cafe-location">Juhu, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> White Chocolate Mocha, Caramel Frappe, Shepherds Pie.</div>
+            </div>
+          </div>
+
+
+          <div class="cafe-card" >
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-15-img-1.jpg"
+                  alt="Bean & Beyond - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-15-img-2.jpg"
+                  alt="Bean & Beyond - Latte Art"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-15-img-3.jpg"
+                  alt="Bean & Beyond - Beans"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=15'">
+              <h3>Café Madras</h3>
+              <div class="cafe-location">Matunga East, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> Rasam Idli, Raagi Masala Dosa, Bisibili Bhaat.</div>
+            </div>
+          </div>
+
+          <div class="cafe-card" >
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-16-img-1.jpg"
+                  alt="Bean & Beyond - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-16-img-2.jpg"
+                  alt="Bean & Beyond - Latte Art"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-16-img-3.jpg"
+                  alt="Bean & Beyond - Beans"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=16'">
+              <h3>Aromas Café & Bistro</h3>
+              <div class="cafe-location">Bandra West, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> Cappuccino, Affogoto, Irish Espresso.
+              </div>
+            </div>
+          </div>
+
+          <div class="cafe-card" >
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-17-img-1.jpg"
+                  alt="Bean & Beyond - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-17-img-2.jpg"
+                  alt="Bean & Beyond - Latte Art"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-17-img-3.jpg"
+                  alt="Bean & Beyond - Beans"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=17'">
+              <h3>Garde Manger Café</h3>
+              <div class="cafe-location">Vile Parle East, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> Multigrain Waffle, Spinach Cottage Cheese Burger, Hot Chocolate.</div>
+            </div>
+          </div>
+
+          <div class="cafe-card" >
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-18-img-1.jpg"
+                  alt="Bean & Beyond - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-18-img-2.jpg"
+                  alt="Bean & Beyond - Latte Art"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-18-img-3.jpg"
+                  alt="Bean & Beyond - Beans"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=18'">
+              <h3>Café New York</h3>
+              <div class="cafe-location">Chowpatty, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> Irani chai, Mawa Cake, Khari Biscuit.</div>
+            </div>
+          </div>
+
+          <div class="cafe-card" >
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-19-img-1.jpg"
+                  alt="Bean & Beyond - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-19-img-2.jpg"
+                  alt="Bean & Beyond - Latte Art"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-19-img-3.jpg"
+                  alt="Bean & Beyond - Beans"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=19'">
+              <h3>August Cafe</h3>
+              <div class="cafe-location">Andheri West, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> Flat Whites, Cappuccinos, Belgian Hot Chocolate.</div>
+            </div>
+          </div>
+
+          <div class="cafe-card" >
+            <div class="cafe-slideshow">
+              <div class="slides-container">
+                <img
+                  src="../static/img/cafe-20-img-1.jpg"
+                  alt="Bean & Beyond - Interior"
+                  class="slide active"
+                />
+                <img
+                  src="../static/img/cafe-20-img-2.jpg"
+                  alt="Bean & Beyond - Latte Art"
+                  class="slide"
+                />
+                <img
+                  src="../static/img/cafe-20-img-3.jpg"
+                  alt="Bean & Beyond - Beans"
+                  class="slide"
+                />
+              </div>
+              <div class="slideshow-nav">
+                <button class="prev-btn">&lsaquo;</button>
+                <div class="slide-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+                <button class="next-btn">&rsaquo;</button>
+              </div>
+            </div>
+            <div class="cafe-details" onclick="window.location.href='../templates/cafedetails.html?id=20'">
+              <h3>The C Spot Cafe</h3>
+              <div class="cafe-location">Andheri West, Mumbai</div>
+              <div class="cafe-specialty-tag"><u><b><i>Specialty:</i></b></u> Latte Macchiato, Oreo Frappe, Caramel Macchiato.</div>
+            </div>
+          </div>
+
+        </div>
+         <div class="end-lines">
+          <p>~~ More Café coming soon !! ~~</p>
+        </div>
+      </div>
+    </section>
+    </main>
+    
+
+    <!-- Footer starts here -->
+     <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>PerqClub</h3>
+            <p>
+              Connecting coffee lovers with amazing cafés. One membership,
+              endless possibilities.
+            </p>
+            <div class="social-links">
+              <a href="#our-fb-ac-link">F</a>
+              <a href="https://www.instagram.com/perqclub/?utm_source=ig_web_button_share_sheet">I</a>
+              <a href="#our-X-Ac-link">X</a>
+              <a href="#our-website-link">G</a>
+              <a href="#our-yt-link">Y</a>
+
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="../templates/index.html">How It Works</a></li>
+              <li><a href="../templates/cafes.html">Partner Cafés</a></li>
+              <li><a href="../templates/membership.html">Pricing</a></li>
+              <li><a href="../templates/index.html">Benefits</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>For Businesses</h3>
+            <ul>
+              <li><a href="#">Become a Partner</a></li>
+              <li><a href="#">Partner Login</a></li>
+              <li><a href="#">Partner Benefits</a></li>
+              <li><a href="#">Success Stories</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><a href="../templates/contactus.html">Help</a></li>
+              <li><a href="mailto:perqclub@gmail.com">perqclub@gmail.com</a></li>
+              <li><a href="tel:+918097767509">+91 80977 67509</a></li>
+              <li>Bandra, Mumbai</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 PerqClub. All rights reserved.</p>
+          <div class="footer-legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Bootstrap JavaScript Libraries -->
+     <script src="../static/js/cafes.js" ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

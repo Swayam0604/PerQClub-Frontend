@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PerqClub - Membership Plans</title>
+    <link rel="stylesheet" href="../static/css/membership.css">
+    <link rel="stylesheet" href="../static/media/membershipmedia.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Birthstone&family=Bungee+Tint&family=Bytesized&family=Prompt:wght@500;600&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+      <div class="container" style="max-width: 1400px;">
+        <div class="header-content">
+          <a href="../templates/index.html"><div class="logo">Per<span>q</span>Club</div></a>
+          <button
+            class="mobile-menu-toggle"
+            id="menuToggle"
+            onclick="toggleMenu()"
+          >
+            <div class="user-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+          </button>
+          <nav id="mainNav">
+            <div class="nav-center">
+            
+            <ul>
+              <li> <select class="location-select">
+                    <option value="">Select Location</option>
+                    <option value="new-york">Mumbai</option>
+                    <option value="los-angeles">Pune</option>
+                    <option value="chicago">Delhi</option>
+                    <option value="seattle">Bangalore</option>
+                    <option value="miami">Gujarat</option>
+                    <option value="austin">Goa</option>
+                </select></li>
+              <li><div class="search-container">
+                    <form class="search-form">
+                        <input type="text" class="search-input" placeholder="Search cafes, perks, events...">
+                        <button type="submit" class="search-button">🔍</button>
+                    </form>
+                </div></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="../templates/cafes.html">Cafés</a></li>
+              <li><a href="../templates/membership.html">Memberships</a></li>
+              <li><a href="../templates/aboutus.html">About Us</a></li>
+              <li><a href="../templates/login.html" class="cta-button-2" >Log In</a></li>
+              <li><a href="../templates/signup.html" class="cta-button Join-now">Join Now</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+        <h1 class="page-title">Membership Pricing</h1>
+        <div class="membership-container">
+            <div class="membership-card">
+                <div class="card-content">
+                    <h2 class="plan-name">PerkPlus</h2>
+                    <div class="price">₹500 <span>/Month</span></div>
+                    <p class="description">Perfect for casual coffee lovers looking for great value.</p>
+                    
+                    <div class="benefits">
+                        <div class="benefit-item">
+                            <span class="checkmark">✓</span>
+                            <span>One free coffee at each partner café (worth ₹1000+)</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="checkmark">✓</span>
+                            <span>10% discount on food at all partner locations</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="checkmark">✓</span>
+                            <span>Digital membership card - no physical card needed</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="checkmark">✓</span>
+                            <span>Visit 5 cafés and earn a free pastry reward</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="action-btn-container">
+                    <button class="btn btn-filled action-btn">Get Your Membership</button>
+                </div>
+            </div>
+            
+            <div class="membership-card best-value">
+                <div class="popular-tag">Most Popular</div>
+                <div class="card-content">
+                    <h2 class="plan-name">PerkElite</h2>
+                    <div class="price">₹1000 <span>/Month</span></div>
+                    <p class="description">Unlock premium perks and bigger savings for coffee enthusiasts.</p>
+                    
+                    <div class="benefits">
+                        <div class="benefit-item">
+                            <span class="checkmark">✓</span>
+                            <span>Two free coffees at each partner café (worth ₹2000+)</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="checkmark">✓</span>
+                            <span>15% discount on food at all partner locations</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="checkmark">✓</span>
+                            <span>Access to exclusive coffee events and workshops</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="checkmark">✓</span>
+                            <span>Referral rewards - get an extra free coffee for each friend you refer</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="checkmark">✓</span>
+                            <span>Digital membership card with premium features</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="checkmark">✓</span>
+                            <span>Partner discounts at bookstores and co-working spaces</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="action-btn-container">
+                    <button class="btn btn-filled action-btn">Get Your Membership</button>
+                </div>
+            </div>
+            
+            <div class="membership-card">
+                <div class="card-content">
+                    <h2 class="plan-name">PerkSupreme</h2>
+                    <div class="price">₹1200 <span>/Month</span></div>
+                    <p class="description">The ultimate coffee experience with exclusive benefits.</p>
+                    
+                    <div class="benefits">
+                        <div class="benefit-item">
+                            <span class="checkmark">✓</span>
+                            <span>Unlimited coffee at three favorite partner cafés</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="checkmark">✓</span>
+                            <span>20% discount on food at all partner locations</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="checkmark">✓</span>
+                            <span>VIP access to coffee events, tastings, and workshops</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="checkmark">✓</span>
+                            <span>Enhanced referral rewards - get two free coffees for each friend you refer</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="checkmark">✓</span>
+                            <span>Priority seating at partner cafés</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="checkmark">✓</span>
+                            <span>Exclusive coffee bean deals and monthly specialty coffee delivery</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="checkmark">✓</span>
+                            <span>25% discount at partner bookstores and co-working spaces</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="action-btn-container">
+                    <button class="btn btn-filled action-btn">Get Your Membership</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>PerqClub</h3>
+            <p>
+              Connecting coffee lovers with amazing cafés. One membership,
+              endless possibilities.
+            </p>
+            <div class="social-links">
+              <a href="#our-fb-ac-link">F</a>
+              <a href="https://www.instagram.com/perqclub/?utm_source=ig_web_button_share_sheet">I</a>
+              <a href="#our-X-Ac-link">X</a>
+              <a href="#our-website-link">G</a>
+              <a href="#our-yt-link">Y</a>
+             
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="../templates/index.html">How It Works</a></li>
+              <li><a href="../templates/cafes.html">Partner Cafés</a></li>
+              <li><a href="../templates/membership.html">Pricing</a></li>
+              <li><a href="../templates/index.html">Benefits</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>For Businesses</h3>
+            <ul>
+              <li><a href="#">Become a Partner</a></li>
+              <li><a href="#">Partner Login</a></li>
+              <li><a href="#">Partner Benefits</a></li>
+              <li><a href="#">Success Stories</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><a href="../templates/contactus.html">Help</a></li>
+              <li><a href="mailto:perqclub@gmail.com">perqclub@gmail.com</a></li>
+              <li><a href="tel:+918097767509">+91 80977 67509</a></li>
+              <li>Bandra, Mumbai</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 PerqClub. All rights reserved.</p>
+          <div class="footer-legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../static/js/membership.js"></script>
+</body>
+</html>

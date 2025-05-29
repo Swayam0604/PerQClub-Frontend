@@ -1,0 +1,265 @@
+/* Mobile Navigation */
+
+@media (max-width: 1200px) {
+  .mobile-menu-toggle {
+    display: block;
+  }
+  .header-content {
+    justify-content: space-between;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    padding: 80px 20px 30px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  nav.active {
+    right: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0 0 20px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+  .location-select {
+    width: 100%;
+  }
+  .search-input {
+    width: 100%;
+  }
+  .cta-button-2 {
+    width: 75%;
+  }
+  .Join-now {
+    width: 75%;
+  }
+}
+
+/* Responsive Styles for Tablet */
+@media (max-width: 768px) {
+  .steps {
+    justify-content: center;
+  }
+
+  .step {
+    flex: 0 0 calc(50% - 30px);
+  }
+  /* Hero Section */
+  .slide-title {
+    font-size: 2rem;
+  }
+  .slide-description {
+    font-size: 1rem;
+  }
+  .search-input {
+    width: 29vh;
+  }
+  .carousel-container {
+    height: 350px;
+  }
+  .cafe-details h1 {
+    text-align: center;
+  }
+
+  .cafe-meta {
+    justify-content: space-around;
+  }
+  .reviews-container {
+    grid-template-columns: 1fr;
+  }
+  .search-input {
+    width: 100%;
+  }
+  .location-select {
+    min-width: 100%;
+  }
+  nav {
+    width: 320px;
+  }
+  .reviews-container {
+    display: grid !important;
+  }
+  .review-card{
+    width: 100% !important;;
+  }
+  .cafes-container {
+    grid-template-columns: 1fr ;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-column {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 576px) {
+  .step {
+    flex: 0 0 100%;
+  }
+  nav {
+    width: 250px !important;
+  }
+  .cafe-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pricing-option {
+    padding: 30px 15px;
+  }
+
+  .features-list {
+    padding-left: 10px;
+  }
+
+  .benefit-item {
+    flex-direction: column;
+  }
+
+  .benefit-icon {
+    width: 100%;
+    height: 70px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .cafe-slideshow {
+    height: 220px;
+  }
+
+  .cafe-details {
+    padding: 15px;
+  }
+
+  .cafe-specialty-tag {
+    padding: 4px 12px;
+  }
+  .cafe-details h1{
+    line-height: 1.2;
+    margin-bottom: 0 0 20px 0;  }
+  .carousel-container {
+    height: 250px;
+  }
+  .cafe-meta {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+  }
+  .cafe-rating {
+    margin-bottom: 10px;
+  }
+  .cafe-card-content {
+    padding: 15px;
+  }
+  .highlights-list {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+  }
+  .footer-legal-links {
+    margin-top: 20px;
+  }
+}
+
+/* Responsive adjustments for featured cafes */
+/* Tablet */
+@media screen and (max-width: 992px) {
+  .cafe-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+  .search-input {
+    width: 30vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .search-input {
+    width: 100%;
+  }
+  .map-container .iframe {
+    height: 250px;
+    width: 320px;
+  }
+  nav {
+    width: 320px;
+  }
+  .location-select {
+    min-width: 100%;
+  }
+  .reviews-container {
+    display: flex;
+  }
+  .review-card{
+    width :311px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .map-container .iframe {
+    height: 250px;
+    width: 300px;
+  }
+  .search-input {
+    width: 28vh;
+  }
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .cafe-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .helpful-btn{
+    margin-bottom: 10px;
+  }
+}

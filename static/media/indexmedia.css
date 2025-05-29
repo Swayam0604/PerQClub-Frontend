@@ -1,0 +1,207 @@
+/* Mobile Navigation */
+
+@media (max-width: 1200px) {
+  .mobile-menu-toggle {
+    display: block;
+  }
+  .header-content {
+    justify-content: space-between;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    padding: 80px 20px 30px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  nav.active {
+    right: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0 0 20px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+  .search-input {
+    width: 100%;
+  }
+  .location-select {
+    min-width: 100%;
+  }
+  .cta-button-2 {
+    width: 75%;
+  }
+  .Join-now {
+    width: 75%;
+  }
+}
+
+/* Responsive Styles for Tablet */
+@media (max-width: 768px) {
+  .steps {
+    justify-content: center;
+  }
+
+  .step {
+    flex: 0 0 calc(50% - 30px);
+  }
+
+  .cafe-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+
+  nav {
+    width: 320px;
+  }
+  .search-input {
+    width: 100%;
+  }
+  .location-select {
+    width: 100%;
+  }
+  /* for the membership-pricing section  */
+  .pricing-option {
+    max-width: 320px;
+  }
+  /* for the membership benifits section  */
+  .benefit-item {
+    min-height: 185px;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-column {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .slide-title {
+    font-size: 2rem;
+  }
+  .slide-description {
+    font-size: 1rem;
+  }
+}
+/* Responsive Styles for Mobile */
+@media (max-width: 576px) {
+  .step {
+    flex: 0 0 100%;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .cafe-slideshow {
+    height: 220px;
+  }
+
+  .cafe-details {
+    padding: 15px;
+  }
+
+  .cafe-specialty-tag {
+    padding: 4px 12px;
+  }
+  /* move the button the center of the */
+  .get-notified {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+  .location-select {
+    width: 100%;
+  }
+  .footer-bottom {
+    flex-direction: column;
+  }
+  .footer-legal-links {
+    margin-top: 20px;
+  }
+  .pricing-option {
+    padding: 30px 15px;
+  }
+
+  .features-list {
+    padding-left: 10px;
+  }
+
+  .benefit-item {
+    flex-direction: column;
+  }
+
+  .benefit-icon {
+    width: 100%;
+    height: 70px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+  nav{
+    width: 250px;
+  }
+  .cafe-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+}
+}
+
+/* Responsive adjustments for featured cafes */
+/* Tablet */
+@media screen and (max-width: 992px) {
+  .cafe-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .search-input {
+    width: 100%;
+  }
+  .location-select {
+    min-width: 100%;
+  }
+  .cta-button-2 {
+    width: 75%;
+  }
+  .Join-now {
+    width: 75%;
+  }
+}
